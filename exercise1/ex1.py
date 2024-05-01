@@ -60,21 +60,18 @@ if __name__=="__main__":
     img = cv2.imread("test.jpg")
     utils.show(img)
     
-    # img1 = smoothImage(img)
-    # utils.show(img1)
-    # cv2.imwrite("result1.jpg", img1)
+    img1 = smoothImage(img)
+    utils.show(img1)
+    cv2.imwrite("result1.jpg", img1)
     
-    # img2 = binarizeImage(img, 190)
-    # utils.show(img2)
-    # cv2.imwrite("result2.jpg", img2)
+    img2 = binarizeImage(img, 190)
+    utils.show(img2)
+    cv2.imwrite("result2.jpg", img2)
    
-    # img3 = processImage(img)
-    # utils.show(img3)
-    # cv2.imwrite("result3.jpg", img3)
+    img3 = processImage(img)
+    utils.show(img3)
+    cv2.imwrite("result3.jpg", img3)
     
-    # img4 = doSomething(img)
-    # utils.show(img4)
-    # cv2.imwrite("result4.jpg", img4)
-
-    img5 = cv2.edgePreservingFilter(img, flags=1, sigma_s=60, sigma_r=0.4)
-    utils.show(img5)
+    img4 = doSomething(img)
+    utils.show(img4)
+    cv2.imwrite("result4.jpg", img4)
